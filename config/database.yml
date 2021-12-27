@@ -9,12 +9,12 @@ default: &default
 
 development:
   <<: *default
-  database: <%= ENV['DB_NAME'] %>
+  database: chart_app_development
   host: chart_postgres
 
 production:
   <<: *default
-  database: <%= ENV['DB_NAME'] %>
+  database: chart_app_production
 
 test:
   <<: *default
