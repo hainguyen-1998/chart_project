@@ -15,6 +15,8 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'pg'
+# gem 'haml'
+gem 'haml-rails'
 gem 'coffee-rails'
 gem 'bootstrap-sass'
 gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.2'
