@@ -1,0 +1,2 @@
+#RUN RAILS_ENV=production bin/rake assets:precompile
+#RUN RAILS_ENV=production bin/rake db:migrate

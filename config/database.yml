@@ -1,0 +1,26 @@
+default: &default
+  adapter: postgresql
+  pool: 5
+  timeout: 5000
+  username: postgres
+  password:
+  port: 5432
+  host: chart_postgres
+
+development:
+  <<: *default
+  database: <%= ENV['DB_NAME'] %>
+  host: chart_postgres
+
+production:
+  <<: *default
+  database: <%= ENV['DB_NAME'] %>
+
+test:
+  <<: *default
+  database: chart_app_test
+  username: postgres
+  password: postgres
+  port: 5432
+  pool: 5
+  timeout: 5000
